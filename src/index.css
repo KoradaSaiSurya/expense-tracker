@@ -1,0 +1,298 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* LOGIN / REGISTER CONTAINER */
+.login-Container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* INPUT FIELDS */
+.input-Fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-Fields h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.login-Input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.login-Btn {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-Btn:hover {
+  background-color: #357bc8;
+}
+
+/* LINK TEXT */
+.input-Fields p {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.input-Fields a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.input-Fields a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .login-Container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .input-Fields h2 {
+    font-size: 1.3rem;
+  }
+
+  .login-Input,
+  .login-Btn {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .input-Fields p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Dashboard Container */
+.dashboard-Container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-Form h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.expense-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.ex{
+  margin-bottom: 20px;
+}
+.rupees{
+  color: green;;
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.amount-addbtn {
+  display: flex;
+  gap: 10px;
+}
+
+.amount {
+  flex: 1;
+}
+
+.add-Btn {
+  padding: 10px 15px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-Btn:hover {
+  background-color: #357bc8;
+}
+
+/* Expense Items */
+.expense-List {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.title input {
+  font-size: 0.9rem;
+  padding: 5px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+.action-Btns {
+  display: flex;
+  gap: 8px;
+}
+
+
+
+.action-Btns {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-Btn,
+.delete-Btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+
+
+.edit-Btn,
+.delete-Btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.edit-Btn:hover {
+  color: #4a90e2;
+}
+
+.delete-Btn:hover {
+  color: crimson;
+}
+
+
+.edit-Btn,
+.delete-Btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.edit-Btn:hover {
+  color: #4a90e2;
+}
+
+.delete-Btn:hover {
+  color: crimson;
+}
+
+/* Total */
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+/* Logout Button */
+.logout {
+  margin-top: 20px;
+  width: 100%;
+  background: #ff4d4d;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #cc0000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  .dashboard-Container {
+    padding: 15px;
+  }
+
+  .dashboard-Form h2 {
+    font-size: 1.1rem;
+  }
+
+  input, .add-Btn, .logout {
+    font-size: 0.95rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+}
